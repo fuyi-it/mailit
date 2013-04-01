@@ -1,0 +1,7 @@
+<index-page>
+  <collection: replace>
+    <table-plus fields="this,phone_numbers, email,qq, tagstring">
+      <empty-message:>没有数据</empty-message:>
+    </table-plus>
+  </collection:>
+</index-page>
