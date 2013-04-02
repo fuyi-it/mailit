@@ -14,15 +14,15 @@ class Datafrom < ActiveRecord::Base
   # --- Permissions --- #
 
   def create_permitted?
-    acting_user.administrator?
+    acting_user.administrator? or  acting_user.role.name == 'manager'
   end
 
   def update_permitted?
-    acting_user.administrator?
+    acting_user.administrator? or  acting_user.role.name == 'manager'
   end
 
   def destroy_permitted?
-    acting_user.administrator?
+    acting_user.administrator? or  acting_user.role.name == 'manager'
   end
 
   def view_permitted?(field)

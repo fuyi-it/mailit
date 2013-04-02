@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130331181535) do
+ActiveRecord::Schema.define(:version => 20130402161228) do
 
   create_table "accounts", :force => true do |t|
     t.string   "name"
@@ -46,9 +46,11 @@ ActiveRecord::Schema.define(:version => 20130331181535) do
     t.string   "http"
     t.integer  "datafrom_id"
     t.string   "tagstring"
+    t.integer  "owner_id"
   end
 
   add_index "customers", ["datafrom_id"], :name => "index_customers_on_datafrom_id"
+  add_index "customers", ["owner_id"], :name => "index_customers_on_owner_id"
 
   create_table "datafroms", :force => true do |t|
     t.string   "name"
@@ -97,6 +99,9 @@ ActiveRecord::Schema.define(:version => 20130331181535) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "owner_id"
+    t.integer  "quantily"
+    t.integer  "num"
+    t.integer  "balance"
   end
 
   add_index "send_msgs", ["owner_id"], :name => "index_send_msgs_on_owner_id"

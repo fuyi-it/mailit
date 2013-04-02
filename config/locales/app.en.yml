@@ -234,6 +234,15 @@ en:
       datafrom: 
         one: "数据来源"
         other: "数据来源列表"
+      adapter:
+        one: "短信网关"
+        other: "短信网关"
+      send_msg:
+        one: "发送短信"
+        other: "发送短信"
+      sms_param:
+        one: "短信网关参数"
+        other: "短信网关参数"
       role:
         one: "角色"
         other: "角色列表"
@@ -329,6 +338,31 @@ en:
         users: "员工"
         accounts: "帐号"
         unit: "单位"
+      send_msg:
+        title: "标题"
+        msg: "信息内容"
+        mobile: "手机号列表"
+        created_at: "发送时间"
+        num: "手机号码数"
+        quantily: "发送条数"
+        balance: "当前余额"
+      sms_param:
+        name: "网关参数名称"
+        url: "网址"
+        kind: "类别"
+        user: "登录字段名"
+        pwd: "密码字段名"
+        msg: "短信内容字段名"
+        mobile: "手机号字段名"
+        encode: "编码"
+        url_other: "其它参数"
+        is_post: "POST方式?"
+        adapter: "网关名称"
+      adapter:
+        name: "名称"
+        account_agent: "网关帐号"
+        password: "密码"
+        balance: "余额"
       tutorial:
         title: "教程名称"
         category: "类别"
@@ -339,6 +373,7 @@ en:
         soft: "软件名称"
       account:
         title: "名称"
+        password: "密码"
         name: "开户人"
         account: "帐号"
         bank: "开户行"

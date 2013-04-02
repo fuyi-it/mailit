@@ -30,3 +30,22 @@
       标签: <view:tags/>
     </div>
 </def>
+
+<extend tag="card" for="SendMsg">
+  <old-card merge>
+    <prepend-body:>
+      <send-msg-info/>
+    </prepend-body:>
+  </old-card>
+</extend>
+
+
+<def tag="send-msg-info">
+    <div>
+      手机号码数: <view:num/>    </div>
+    <div>
+      发送信息数: <view:quantily/>    </div>
+    <div>
+      信息余额: <view:balance/>    </div>
+</def>
+

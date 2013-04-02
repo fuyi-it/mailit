@@ -19,20 +19,20 @@ class Soft < ActiveRecord::Base
   # --- Permissions --- #
 
   def create_permitted?
-    acting_user.administrator?  or  acting_user.role.name = 'tech'
+    acting_user.administrator?  or  acting_user.role.name == 'tech'
 
   end
 
   def update_permitted?
-    acting_user.administrator? or  acting_user.role.name = 'tech'
+    acting_user.administrator? or  acting_user.role.name == 'tech'
   end
 
   def destroy_permitted?
-    acting_user.administrator? or  acting_user.role.name = 'tech'
+    acting_user.administrator? or  acting_user.role.name == 'tech'
   end
 
   def view_permitted?(field)
-     acting_user.administrator? or  acting_user.role.name = 'tech'
+    true
   end
 
 end

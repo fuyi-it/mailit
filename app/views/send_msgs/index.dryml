@@ -1,0 +1,7 @@
+<index-page>
+  <collection: replace>
+    <div>
+      <table-plus fields="this,created_at,num,quantily,balance,msg,mobile"/>
+    </div>
+  </collection:>
+</index-page>
